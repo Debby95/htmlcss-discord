@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: bold;
 }
 
 body {
@@ -19,18 +20,10 @@ body {
     margin: 0 auto;
 }
 
+
 :root {
     --color-bluecrayola: #245EE9; 
-    --white-color: #FFFFFF;
-    --dodger-blue-color: #1D90FF;
-    --pink-color: #FFC0CB;
-    --lightgrey-color: #D3D3D3;
-    --green-color: #218B21;
     --dark-color: #23272A;
-    --lightcoral-color: #EF8080;
-    --lightseagreen-color: #1FB2AA;
-    --aquamarine-color: #7FFFD3;
-    --salmon-color: #CF9195;
 }
 
 
@@ -38,6 +31,7 @@ nav {
     display: flex;
     background-color: var(--color-bluecrayola);
     padding: 20px;
+    justify-content: center;
 }
 
 .logo {
@@ -49,7 +43,6 @@ nav {
     display: flex;
     flex-grow: 2;
     color: white;
-    font-weight: bold;
     justify-content: space-around;
 }
 
@@ -63,7 +56,6 @@ nav {
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
-    font-weight: bold;
 }
 
 .jumbotron {
@@ -95,8 +87,6 @@ h1 {
 .download {
     padding: 15px 25px;
     border: none;
-    border-radius: 20px;
-    font-weight: bold;
     border-radius: 30px;
     margin-top: 20px;
 }
@@ -105,7 +95,6 @@ h1 {
     padding: 15px 25px;
     border: none;
     border-radius: 30px;
-    font-weight: bold;
     margin-top: 20px;
     background-color: #23272A;
     color: white;
@@ -132,11 +121,12 @@ h1 {
     padding: 100px;
 }
 
-h2 {
+.stars {
     display: flex;
     font-size: 40px;
     justify-content: center;
     padding-bottom: 20px;
+    background-image: url(img/stars.svg);
 }
 
 .voice {
@@ -169,16 +159,21 @@ h2 {
 
 
 .section-stream {
-    padding: 100px 100px;
-    background-color: var(--lightgrey-color);
+    padding: 50px 50px;
 }
 
-.bg-green {
-    background-color: var(--green-color);
+.item4 {
     width: 80%;
-    padding: 400px;
+    padding: 200px;
     margin: 0 auto;
-    border: 3px dashed black;
+}
+
+.downloadmac {
+    padding: 20px 35px;
+    border: none;
+    border-radius: 30px;
+    background-color: #8EA1E1;
+    color: white;
 }
 
 .section-close {
@@ -191,16 +186,33 @@ h2 {
     min-height: 600px;
 }
 
+span {
+    color: white;
+}
+
 .col2 {
-    background-color: var(--lightcoral-color);
+    background-color: #23272A;
     border: 3px dashed black;
-    flex-grow: 2;
+    color: #7289DA;
+}
+
+.title-list{
+    color: #7289DA;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
 }
 
 .col3 {
-    background-color: var(--lightseagreen-color);
+    background-color: #23272A;
     border: 3px dashed black;
     flex-grow: 1;
+}
+
+hr {
+    color: #8EA1E1;
 }
 
 .section-logo2 {
@@ -211,7 +223,6 @@ h2 {
 
 .row-logo2 {
     display: flex;
-    background-color: var(--aquamarine-color);
     padding-bottom: 20px;
     width: 75%;
     justify-content: space-between;
@@ -220,12 +231,18 @@ h2 {
 }
 
 .logo2 {
-    border: 1px dashed black;
-    background-color: #996F7A;
     margin-bottom: 30px;
     width: 60px;
     padding: 10px 10px;
     margin-top: 30px;
+}
+
+.signin{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #8EA1E1;
+    color: white;
 }
 
 
